@@ -39,7 +39,12 @@ export DB_USERNAME=postgres
 export DB_PASSWORD=root
 ```
 
-**Windows:**
+>[!warning]
+>For Windows code-blocks with multiple commands:
+>
+>Copy one command at the time. Batch copying and pasting to CMD may produce an incorrect input.
+
+**Windows (CMD):**
 
 ```bash
 set DB_URL=jdbc:postgresql://localhost:5432/liquibase_demo
@@ -98,7 +103,7 @@ All changelogs with specified contexts are disabled (look at `application.yml`),
 ./mvnw spring-boot:run
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 mvnw.cmd spring-boot:run
@@ -114,7 +119,7 @@ Perform rollback:
 ./mvnw liquibase:rollback -Dliquibase.rollbackTag=v0.0
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 mvnw.cmd liquibase:rollback -Dliquibase.rollbackTag=v0.0
@@ -131,7 +136,7 @@ export SPRING_LIQUIBASE_CONTEXTS=xml
 ./mvnw spring-boot:run
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 set SPRING_LIQUIBASE_CONTEXTS=xml
@@ -146,7 +151,7 @@ or
 ./mvnw spring-boot:run -Dspring-boot.run.arguments="--spring.liquibase.contexts=xml"
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 mvnw.cmd spring-boot:run -Dspring-boot.run.arguments="--spring.liquibase.contexts=xml"
@@ -162,7 +167,7 @@ Perform rollback:
 ./mvnw liquibase:rollback -Dliquibase.rollbackTag=v0.0
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 mvnw.cmd liquibase:rollback -Dliquibase.rollbackTag=v0.0
@@ -179,7 +184,7 @@ export SPRING_LIQUIBASE_CONTEXTS=yml
 ./mvnw spring-boot:run
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 set SPRING_LIQUIBASE_CONTEXTS=yml
@@ -194,7 +199,7 @@ or
 ./mvnw spring-boot:run -Dspring-boot.run.arguments="--spring.liquibase.contexts=yml"
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 mvnw.cmd spring-boot:run -Dspring-boot.run.arguments="--spring.liquibase.contexts=yml"
@@ -210,7 +215,7 @@ Perform rollback:
 ./mvnw liquibase:rollback -Dliquibase.rollbackTag=v0.0
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 mvnw.cmd liquibase:rollback -Dliquibase.rollbackTag=v0.0
@@ -227,7 +232,7 @@ export SPRING_LIQUIBASE_CONTEXTS=postgres
 ./mvnw spring-boot:run
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 set SPRING_LIQUIBASE_CONTEXTS=postgres
@@ -242,7 +247,7 @@ or
 ./mvnw spring-boot:run -Dspring-boot.run.arguments="--spring.liquibase.contexts=postgres"
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 mvnw.cmd spring-boot:run -Dspring-boot.run.arguments="--spring.liquibase.contexts=postgres"
@@ -258,7 +263,7 @@ Perform rollback:
 ./mvnw liquibase:rollback -Dliquibase.rollbackTag=v0.0
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 mvnw.cmd liquibase:rollback -Dliquibase.rollbackTag=v0.0
@@ -275,7 +280,7 @@ export SPRING_LIQUIBASE_CONTEXTS=mysql
 ./mvnw spring-boot:run
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 set SPRING_LIQUIBASE_CONTEXTS=mysql
@@ -290,7 +295,7 @@ or
 ./mvnw spring-boot:run -Dspring-boot.run.arguments="--spring.liquibase.contexts=mysql"
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 mvnw.cmd spring-boot:run -Dspring-boot.run.arguments="--spring.liquibase.contexts=mysql"
@@ -306,7 +311,7 @@ Perform rollback:
 ./mvnw liquibase:rollback -Dliquibase.rollbackTag=v0.0
 ```
 
-**Windows:**
+**Windows (CMD):**
 
 ```bash
 mvnw.cmd liquibase:rollback -Dliquibase.rollbackTag=v0.0
