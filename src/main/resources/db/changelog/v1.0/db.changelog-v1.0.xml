@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <include file="01-add-users.xml" relativeToChangelogFile="true" context="xml"/>
+    <include file="10-add-users.yml" relativeToChangelogFile="true" context="yml"/>
+    <include file="20-add-users-mysql.sql" relativeToChangelogFile="true" context="mysql"/>
+    <include file="30-add-users-postgres.sql" relativeToChangelogFile="true" context="postgres"/>
+
+</databaseChangeLog>
