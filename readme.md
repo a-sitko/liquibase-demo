@@ -301,8 +301,6 @@ or
 mvnw.cmd spring-boot:run -Dspring-boot.run.arguments="--spring.liquibase.contexts=mysql"
 ```
 
-Interrupt with `Ctrl + C`.
-
 Perform rollback:
 
 **Linux:**
